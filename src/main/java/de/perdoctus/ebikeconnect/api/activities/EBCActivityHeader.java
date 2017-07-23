@@ -60,6 +60,9 @@ public class EBCActivityHeader {
 
     @JsonProperty("bui_serial")
     private String buiSerial;
+    
+    @JsonProperty("title")
+    private String title;
 
     public long getId() {
         return id;
@@ -139,5 +142,13 @@ public class EBCActivityHeader {
 
     public void setBuiSerial(String buiSerial) {
         this.buiSerial = buiSerial;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
