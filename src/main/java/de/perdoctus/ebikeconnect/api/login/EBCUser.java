@@ -48,6 +48,9 @@ public class EBCUser {
     @JsonProperty("home_address")
     private EBCAddress homeAddress;
 
+    @JsonProperty("work_address")
+    private EBCAddress workAddress;
+
     @JsonProperty("date_of_birth")
     private String dateOfBirth;
 
@@ -107,6 +110,14 @@ public class EBCUser {
 
     public void setHomeAddress(EBCAddress homeAddress) {
         this.homeAddress = homeAddress;
+    }
+
+    public EBCAddress getWorkAddress() {
+        return workAddress;
+    }
+
+    public void setWorkAddress(EBCAddress workAddress) {
+        this.workAddress = workAddress;
     }
 
     public String getDateOfBirth() {
