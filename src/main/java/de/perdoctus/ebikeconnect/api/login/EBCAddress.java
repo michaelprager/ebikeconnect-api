@@ -37,6 +37,9 @@ public class EBCAddress {
     @JsonProperty("street")
     private String street;
 
+    @JsonProperty("number")
+    private String number;
+
     @JsonProperty("city")
     private String city;
 
@@ -71,6 +74,14 @@ public class EBCAddress {
 
     public void setStreet(String street) {
         this.street = street;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public String getCity() {
