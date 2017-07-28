@@ -92,6 +92,9 @@ public class EBCActivityDetailsResponse {
     @JsonProperty("heart_rate")
     private List<List<Short>> heartRate;
 
+    @JsonProperty("power_output")
+    private List<List<Integer>> powerOutput;
+
     @JsonProperty("speed")
     private List<List<Float>> speed;
 
@@ -251,6 +254,14 @@ public class EBCActivityDetailsResponse {
 
     public void setHeartRate(List<List<Short>> heartRate) {
         this.heartRate = heartRate;
+    }
+
+    public List<List<Integer>> getPowerOutput() {
+        return powerOutput;
+    }
+
+    public void setPowerOutput(List<List<Integer>> powerOutput) {
+        this.powerOutput = powerOutput;
     }
 
     public List<List<Float>> getSpeed() {
