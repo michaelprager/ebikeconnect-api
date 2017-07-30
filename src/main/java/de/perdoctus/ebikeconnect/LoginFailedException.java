@@ -28,6 +28,8 @@ package de.perdoctus.ebikeconnect;
 
 public class LoginFailedException extends Exception {
 
+    private static final long serialVersionUID = -8110348352980547757L;
+
     public LoginFailedException() {
     }
 

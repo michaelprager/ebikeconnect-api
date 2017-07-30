@@ -54,6 +54,8 @@ public class LoginIT extends IntegrationTest {
 
         // then
         assertThat(service.isLoggedIn()).isFalse();
+        
+        service.close();
     }
 
 }

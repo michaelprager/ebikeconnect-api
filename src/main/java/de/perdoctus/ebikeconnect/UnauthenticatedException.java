@@ -29,6 +29,8 @@ package de.perdoctus.ebikeconnect;
 
 public class UnauthenticatedException extends Exception {
 
+    private static final long serialVersionUID = 934003428108915152L;
+
     public UnauthenticatedException() {
     }
 
